@@ -1,4 +1,3 @@
-# AniSched-ModernUI
 AniSched for Windows ModernUI
 ========
 
