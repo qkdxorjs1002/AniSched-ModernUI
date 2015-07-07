@@ -1,0 +1,41 @@
+﻿<SettingsFlyout
+    x:Class="AniSched.SettingsContract1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AniSched"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="정보"
+    d:DesignWidth="346">
+
+    <!-- 이 StackPanel이 콘텐츠 섹션의 세로 레이아웃에 대한 루트 패널로 사용됩니다. -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- 아래의 StackPanel이 개별 콘텐츠 섹션을 정의합니다. -->
+
+        <!-- 콘텐츠 섹션 1-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- 섹션 1 헤더 -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="만든이" />
+
+            <!-- 섹션 1 본문 -->
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap" ToolTipService.ToolTip="http://qkdxorjs1002.blog.me/">
+                <TextBlock.Text>
+                    ⓒ2015 Novang.
+                </TextBlock.Text>
+            </TextBlock>
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+                <TextBlock.Text>
+                    Time Table from www.anissia.net
+                </TextBlock.Text>
+            </TextBlock>
+
+        </StackPanel>
+
+        <!-- 필요한 경우 아래의 추가 콘텐츠 섹션을 정의합니다. -->
+
+    </StackPanel>
+</SettingsFlyout>
