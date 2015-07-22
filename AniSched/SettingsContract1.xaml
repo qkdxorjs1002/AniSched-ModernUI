@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     IconSource="Assets/SmallLogo.png"
-    Title="정보"
+    Title="설정"
     d:DesignWidth="346">
 
     <!-- 이 StackPanel이 콘텐츠 섹션의 세로 레이아웃에 대한 루트 패널로 사용됩니다. -->
@@ -22,17 +22,12 @@
             <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="만든이" />
 
             <!-- 섹션 1 본문 -->
-            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap" ToolTipService.ToolTip="http://qkdxorjs1002.blog.me/">
-                <TextBlock.Text>
-                    ⓒ2015 Novang.
-                </TextBlock.Text>
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" ToolTipService.ToolTip="http://qkdxorjs1002.blog.me/" SelectionChanged="TextBlock_SelectionChanged" Margin="10,0,0,0">
+        	    <Run Text="ⓒ2015 Novang."/>
+        	    <LineBreak/>
+        	    <Run Text="Time Table from www.anissia.net"/>
             </TextBlock>
-            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
-                <TextBlock.Text>
-                    Time Table from www.anissia.net
-                </TextBlock.Text>
-            </TextBlock>
-
+            
         </StackPanel>
 
         <!-- 필요한 경우 아래의 추가 콘텐츠 섹션을 정의합니다. -->

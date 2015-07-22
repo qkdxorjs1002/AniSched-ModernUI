@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("AniSched")>
-<Assembly: AssemblyCopyright("Copyright ©  2015")>
+<Assembly: AssemblyCopyright("©2015, Novang.")> 
 <Assembly: AssemblyTrademark("")>
 
 ' 어셈블리의 버전 정보는 다음 네 가지 값으로 구성됩니다.

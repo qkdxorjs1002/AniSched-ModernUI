@@ -3,4 +3,7 @@
 Public NotInheritable Class SettingsContract1
     Inherits SettingsFlyout
 
+    Private Sub TextBlock_SelectionChanged(sender As Object, e As RoutedEventArgs)
+
+    End Sub
 End Class

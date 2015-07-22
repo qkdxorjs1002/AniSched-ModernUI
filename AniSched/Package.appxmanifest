@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="13139Novang.AniSched" Publisher="CN=8618EF24-0399-4ACB-BBBC-87A2F5B3B625" Version="1.1.0.3" />
+  <Identity Name="13139Novang.AniSched" Publisher="CN=8618EF24-0399-4ACB-BBBC-87A2F5B3B625" Version="1.1.0.4" />
   <Properties>
     <DisplayName>AniSched</DisplayName>
     <PublisherDisplayName>Novang</PublisherDisplayName>

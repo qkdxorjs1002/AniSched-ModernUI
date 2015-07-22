@@ -6,4 +6,7 @@
 Public NotInheritable Class MainPage
     Inherits Page
 
+    Private Sub webview1_NavigationFailed(sender As Object, e As WebViewNavigationFailedEventArgs) Handles webview1.NavigationFailed
+        fail_txt.Visibility = Windows.UI.Xaml.Visibility.Visible
+    End Sub
 End Class

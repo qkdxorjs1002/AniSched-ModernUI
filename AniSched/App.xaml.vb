@@ -1,6 +1,10 @@
 ﻿' 새 응용 프로그램 템플릿에 대한 설명은 http://go.microsoft.com/fwlink/?LinkId=234227에 나와 있습니다.
 Imports Windows.UI.ApplicationSettings
 Imports Windows.UI.Popups
+Imports Microsoft.VisualBasic
+Imports System
+Imports System.Windows
+
 ''' <summary>
 ''' 기본 응용 프로그램 클래스를 보완하는 응용 프로그램별 동작을 제공합니다.
 ''' </summary>
@@ -47,9 +51,9 @@ NotInheritable Class App
             ' 구성합니다.
             rootFrame.Navigate(GetType(MainPage), e.Arguments)
         End If
-
-        ' 현재 창이 활성 창인지 확인
+            ' 현재 창이 활성 창인지 확인
         Window.Current.Activate()
+
     End Sub
 
     ''' <summary>
@@ -80,7 +84,7 @@ NotInheritable Class App
 
     Private Sub OnCommandsRequested(sender As SettingsPane, args As SettingsPaneCommandsRequestedEventArgs)
         Dim handler As New UICommandInvokedHandler(AddressOf ShowCustomSettingFlyout)
-        args.Request.ApplicationCommands.Add(New SettingsCommand("정보", "정보", handler))
+        args.Request.ApplicationCommands.Add(New SettingsCommand("설정", "설정", handler))
     End Sub
 
     Private Sub ShowCustomSettingFlyout()
