@@ -5,28 +5,17 @@
     xmlns:local="using:AniSched"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" RequestedTheme="Light">
-
+    mc:Ignorable="d">
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" MinWidth="400"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <WebView x:Name="webview1" Grid.Column="0" Source="http://www.anissia.net/anitime/" Margin="0,-64,0,0"/>
-        <TextBlock x:Name="fail_txt" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" CharacterSpacing="-3" Foreground="Black" FontSize="24" TextAlignment="Center" Visibility="Collapsed">
-        	<Run/>
-        	<LineBreak/>
-        	<Run/>
-        	<LineBreak/>
-        	<Run/>
-        	<LineBreak/>
-        	<Run Text="편성표 불러오기를 실패 하였습니다."/>
-        	<LineBreak/>
-        	<Run Text="인터넷 연결을 "/>
-        	<Run Text="확인한 후"/>
-        	<LineBreak/>
-        	<Run Text="앱을 닫고 다시실행해주세요."/>
-        </TextBlock>
+        <WebView x:Name="webview_day" Grid.Column="0" Source="http://www.anissia.net/anitime/#cl=fe3b72%20fafafa%20fe3b72%20ffffff%20fafafa%20ffffff%20fe3b72%20ffffff%20000000%20fe3b72" Margin="0,-64,0,0" Visibility="Collapsed" RequestedTheme="Light"/>
+        <WebView x:Name="webview_night" Grid.Column="0" Source="http://www.anissia.net/anitime/#cl=fe3b72%20191919%20fe3b72%20191919%20000000%20ffffff%20fe3b72%20000000%20b3b3b3%20fe3b72" Margin="0,-64,0,0" Visibility="Collapsed" RequestedTheme="Dark"/>
+        <TextBlock x:Name="fail_txt" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" CharacterSpacing="-3" Foreground="#FFFE3B72" FontSize="24" TextAlignment="Center" Visibility="Collapsed" Text="편성표 불러오기를 실패 하였습니다.&#xD;&#xA;인터넷 연결과 서버 상태를 확인한 후&#xD;&#xA;앱을 닫고 다시실행해주세요."/>
+        <TextBlock x:Name="testtext" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="279" Width="308" Visibility="Collapsed" FontSize="96"/>
 
     </Grid>
 </Page>

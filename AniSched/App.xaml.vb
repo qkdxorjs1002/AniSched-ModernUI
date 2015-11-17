@@ -51,7 +51,7 @@ NotInheritable Class App
             ' 구성합니다.
             rootFrame.Navigate(GetType(MainPage), e.Arguments)
         End If
-            ' 현재 창이 활성 창인지 확인
+        ' 현재 창이 활성 창인지 확인
         Window.Current.Activate()
 
     End Sub
