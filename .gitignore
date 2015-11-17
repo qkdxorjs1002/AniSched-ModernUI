@@ -214,7 +214,3 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-AniSched/Package.StoreAssociation.xml
-
-AniSched/AniSched.vbproj
-*.vbproj
